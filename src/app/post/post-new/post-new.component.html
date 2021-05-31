@@ -1,1 +1,6 @@
-<p>post-new works!</p>
+<mat-form-field>
+    <mat-label>Post</mat-label>
+    <textarea matInput [formControl]="text"></textarea>
+</mat-form-field>
+<br>
+<button mat-raised-button class="mb-3" (click)="addPost()">Agregar</button>

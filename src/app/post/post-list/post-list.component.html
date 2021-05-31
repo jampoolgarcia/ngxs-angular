@@ -1,1 +1,15 @@
-<p>post-list works!</p>
+<ul>
+    <li *ngFor="let post of $posts | async">
+        <mat-card class="mb-3">
+            <mat-card-content>
+            <p class="id"><small>ID: {{ post.id }}</small></p>
+            <p>{{ post.text }}</p>
+            <a mat-raised-button color="warn" (click)="removePost(post.id)">Eliminar</a>
+            </mat-card-content>
+        </mat-card>
+    </li>
+</ul>   
+
+
+
+
